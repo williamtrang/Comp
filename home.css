@@ -12,6 +12,7 @@ body{
 *{
   margin: 0;
 }
+
 .navbar{
   position: fixed;
   top:0;
@@ -31,10 +32,17 @@ body{
     font-size: 15px;
     font-family:"Helvetica";
 }
+.logo{
+  float:left;
+}
 /* When you hover over a tab.. */
 .navbar a:hover {
     background-color: #f2f2f2;
     color: black;
+}
+.logo a:hover{
+  background-color:#333;
+  color:#f2f2f2;
 }
 /* What happens when a tab is active */
 .navbar a.active {
