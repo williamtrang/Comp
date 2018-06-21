@@ -123,12 +123,14 @@ img{
 }
 /* style's the boxes text */
 .box h2{
-  font-family:"Courier New";
+  font-family:"Helvetica";
+  font-weight:bold;
   font-size:3vw;
 }
 
 .box p{
   font-size:1.8vw;
+  font-weight:lighter;
 }
 /* changes the box color based on light or dark */
 .light #box1{
