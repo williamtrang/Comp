@@ -28,13 +28,13 @@ ul{
 ul li{
   color:white;
   float:left;
-  width:200px;
-  height:40px;
+  width:20vw;
+  height:4vw;
   background-color: black;
   opacity:.8;
-  line-height: 40px;
+  line-height: 4vw;
   text-align: center;
-  font-size:18px;
+  font-size:1.8vw;
 }
 
 ul li a{
@@ -60,4 +60,26 @@ ul li a.active{
 
 .logo{
   float:right;
+}
+#slideshow{
+  position: static;
+  top: 12vw;
+  width:80%;
+  height: 45vw;
+  margin: 0 auto;
+  position: relative;
+  align-content: center;
+}
+#slideshow>img{
+  width: 75%;
+  height: 100%;
+  position: ;
+}
+#slideshow>button{
+  position: absolute;
+}
+.slide{
+  align-content: center;
+  height: 50vw;
+  width: 70vw;
 }

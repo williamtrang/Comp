@@ -45,6 +45,44 @@
         </div>
       </li>-->
     </ul>
-    <img src = "clubpicture.jpg">
+    <!--slideshow-->
+    <!-- img add (slideshow) -->
+    <div id = "slideshow">
+    <img class="slide"src="clubpicture.jpg">
+    <img class="slide"src="https://pbs.twimg.com/media/Cl22OXyUkAAkU34.jpg">
+    <img class="slide"src="http://www.kiwanishh.org/uploads/5/0/0/7/50070585/1430205244.png">
+    <img class="slide"src="">
+    <img class="slide"src="">
+    <button type="button" name="button">&#10094;</button>
+    <button type="button" name="button">&#10095;</button>
+  </div>
+    <!-- auto slide (fillers)-->
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("slide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+  </script>
+  <!--
+    <div id="slideshow">
+      <img class="slide"src="clubpicture.jpg">
+      <img class="slide"src="https://pbs.twimg.com/media/Cl22OXyUkAAkU34.jpg">
+      <img class="slide"src="http://www.kiwanishh.org/uploads/5/0/0/7/50070585/1430205244.png">
+      <img class="slide"src="">
+      <img class="slide"src="">
+      <button type="button" name="button">&#10094;</button>
+      <button type="button" name="button">&#10095;</button>
+    </div>
+  -->
   </body>
 </html>
