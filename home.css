@@ -1,9 +1,19 @@
-/* teal for 35w seals */
+/***all the font unless specified is Helvetica*/
 body{
-  background-color: #f2f2f2;
   font-family: "Helvetica";
+  transition-duration: .3s;
+}
+/*light and dark theming*/
+.light{
+  background-color: #f2f2f2;
 }
 
+.dark{
+  background-color: #080808;
+  color:white;
+}
+/*** all of the css of the navbar*/
+/* make navbar the width of the screen and sticky */
 ul{
   position: sticky;
   position: -webkit-sticky;
@@ -17,13 +27,13 @@ ul{
 *{
   margin: 0;
 }
-
+/* styling the news intro */
 h1{
   text-align: center;
   font-size: 48px;
   font-family: "Courier";
 }
-
+/* style all of the big headers of the navbar */
 ul li{
   color:white;
   float:left;
@@ -41,16 +51,18 @@ ul li a{
   color:white;
   display:block;
 }
+/* makes the navbar dropdown elements hidden */
 ul li ul li{
   display:none;
   z-index: 1000000;
 }
-
+/* displays dropdown items when hovered */
 ul li:hover ul li{
   display:block;
   opacity:1;
   overflow: hidden;
 }
+/* changes color of items on hover */
 ul li ul li:hover{
   background-color:green;
 }
@@ -62,18 +74,14 @@ ul li:hover{
 ul li a.active{
   background-color:green;
 }
-
-.logo{
-  float:right;
-}
-
+/* makes img full width of screen (just filler rn) */
 img{
   display: block;
   margin: 0;
   padding: 0;
-  width: 100%
+  width: 100%;
 }
-
+/* added text on picture */
 .container {
   position:inherit;
   text-align: center;
@@ -81,6 +89,17 @@ img{
   z-index: 1;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6vw;
+    color:white;
+    background-color: #282828;
+    opacity: .8;
+    transform: translate(-50%, -50%);
+}
+/*** makes the entire news box structure a flexbox */
 .colorboxes{
   display:flex;
   flex-direction: row;
@@ -88,13 +107,13 @@ img{
   flex-flow: row;
   justify-content: space-around;
 }
-
+/* sets width and height of boxes */
 .box{
   width:30%;
   height:70vh;
   text-align: center;
 }
-
+/* styles pictures inside the boxes */
 .box img{
   height:18vw;
   width:28vw;
@@ -102,7 +121,7 @@ img{
   margin-right: auto;
   cursor:pointer;
 }
-
+/* style's the boxes text */
 .box h2{
   font-family:"Courier New";
   font-size:3vw;
@@ -111,30 +130,51 @@ img{
 .box p{
   font-size:1.8vw;
 }
-
-#box1{
+/* changes the box color based on light or dark */
+.light #box1{
   background-color: #C8C8C8;
 }
 
-#box2{
+.light #box2{
   background-color: #66b2b2;
 }
 
-#box3{
+.light #box3{
   background-color: #C8C8C8;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 72px;
-    color:white;
-    background-color: #282828;
-    opacity: .8;
-    transform: translate(-50%, -50%);
+.dark #box1{
+  background-color: #383838;
 }
 
+.dark #box2{
+  background-color:#008080;
+}
+
+.dark #box3{
+  background-color: #383838;
+}
+/* transition duration for box color */
+#box1{
+  transition-duration: .3s;
+}
+
+#box2{
+  transition-duration: .3s;
+}
+
+#box3{
+  transition-duration: .3s;
+}
+/* styles button for light/dark transition */
+.btn{
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  font-size: 2.4vw;
+  cursor: pointer;
+}
+/* all the slideshow styling */
 #slideshow{
   position: static;
   top: 12vw;

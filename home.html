@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>GAWHS Key Club</title>
+    <!--links html to css-->
     <link href = "home.css" type="text/css" rel="stylesheet">
     <!--<link rel = "shortcut icon" href = "https://www.keyclub.org/wp-content/themes/keyclub/favicon.ico">-->
   </head>
-  <body>
+  <body class = "light">
     <!-- Navbar yay -->
     <ul class = "dropdown">
       <li><div>
         <a class="active" href="#home">HOME</a>
       </div></li>
       <li><a href="#about">ABOUT</a>
+        <!--every ul within an li is a dropdown-->
         <ul>
           <li><a href="#WhatIsKeyClub">What is Key Club?</a></li>
-          <li><a href="#OurClub">Resources</a></li>
-          <!--<li><a href = "#Resources">Resources</a></li>-->
+          <li><a href="#Resouces">Resources</a></li>
         </ul>
       </li>
       <li>EVENTS
         <ul>
             <li><a href = "#PastEvents">Past Events</a></li>
             <li><a href = "#UpcomingEvents">Upcoming Events</a></li>
-            <!--<li><a href = "#EventCalendar">Event Calendar</a></li>-->
+            <li><a href = "#EventCalendar">Event Calendar</a></li>
         </ul>
       </li>
       <li><a href = "#NEWS">NEWS</a>
@@ -38,18 +39,20 @@
           <li><a href = "#DLTRegion">Division &amp; Region</a></li>
         </ul>
       </li>
-      <!--<li><div class = "logo">
-          <a href = "#home"><h2>GAWHS Key Club</h2></a>
-        </div>
-      </li>-->
     </ul>
+    <!--holds the text in the center of picture-->
     <div class = "container">
       <img src = "pictures/clubpicture2.png">
       <div class = "centered">WELCOME KEY CLUBBERS!</div>
+      <!--light/dark toggle-->
+      <button type = "button" name="btn" class = "btn">Dark Mode</button>
     </div>
+    <br>
+    <!--beginning of coloured news boxes -->
     <h1>Check out our most recent stories!</h1>
     <br>
     <div class = "colorboxes">
+      <!--each box is in the box class and has its' own id for styling-->
       <div class = "box">
         <div id = "box1">
           <br>
@@ -94,6 +97,6 @@
     <img class="slide"src="">
   </div>-->
     <!-- auto slide (fillers)-->
-  <script src = "home.js"></script>
+    <script src = "home.js"></script>
   </body>
 </html>

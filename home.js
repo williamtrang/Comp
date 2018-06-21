@@ -11,3 +11,17 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 3000); // Change image every 3 seconds
 }*/
+
+document.querySelector('.btn').addEventListener('click', () => {
+    const body = document.querySelector('body');
+    //changes applied class of light/dark
+    if (body.classList.contains('light')) {
+      body.classList.remove('light');
+      body.classList.add('dark');
+    }
+    else {
+      body.classList.remove('dark');
+      body.classList.add('light');
+    }
+  })
+;
