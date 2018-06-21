@@ -5,7 +5,6 @@
     <title>GAWHS Key Club</title>
     <link href = "home.css" type="text/css" rel="stylesheet">
     <!--<link rel = "shortcut icon" href = "https://www.keyclub.org/wp-content/themes/keyclub/favicon.ico">-->
-    <script src = "home.js"></script>
   </head>
   <body>
     <!-- Navbar yay -->
@@ -16,15 +15,15 @@
       <li><a href="#about">ABOUT</a>
         <ul>
           <li><a href="#WhatIsKeyClub">What is Key Club?</a></li>
-          <li><a href="#OurClub">Our Club</a></li>
-          <li><a href = "#Resources">Resources</a></li>
+          <li><a href="#OurClub">Resources</a></li>
+          <!--<li><a href = "#Resources">Resources</a></li>-->
         </ul>
       </li>
       <li>EVENTS
         <ul>
             <li><a href = "#PastEvents">Past Events</a></li>
             <li><a href = "#UpcomingEvents">Upcoming Events</a></li>
-            <li><a href = "#EventCalendar">Event Calendar</a></li>
+            <!--<li><a href = "#EventCalendar">Event Calendar</a></li>-->
         </ul>
       </li>
       <li><a href = "#NEWS">NEWS</a>
@@ -36,8 +35,7 @@
       <li><a href="#contact">CONTACT</a>
         <ul>
           <li><a href = "#ClubBoard">Club Board</a></li>
-          <li><a href = "#DLT">Division Leadership Team</a></li>
-          <li><a href = "RegionTeam">Region Team</a></li>
+          <li><a href = "#DLTRegion">Division &amp; Region</a></li>
         </ul>
       </li>
       <!--<li><div class = "logo">
@@ -45,44 +43,57 @@
         </div>
       </li>-->
     </ul>
+    <div class = "container">
+      <img src = "pictures/clubpicture2.png">
+      <div class = "centered">WELCOME KEY CLUBBERS!</div>
+    </div>
+    <h1>Check out our most recent stories!</h1>
+    <br>
+    <div class = "colorboxes">
+      <div class = "box">
+        <div id = "box1">
+          <br>
+          <a><img src = "pictures/otc.jpg"></a>
+          <br>
+          <h2>OTC</h2>
+          <br>
+          <p>Check out the details for our annual Officer Training Conference!</p>
+          <br><br><br><br>
+        </div>
+      </div>
+      <div class = "box">
+        <div id = "box2">
+          <br>
+          <a><img src = "pictures/quickly.jpg"></a>
+          <br>
+          <h2>Boba Fundraiser</h2>
+          <br>
+          <p>Buy boba in front of the school on Friday for $2!</p>
+          <br><br><br><br>
+        </div>
+      </div>
+      <div class = "box">
+        <div id = "box3">
+          <br>
+          <a><img src = "pictures/PenPals.jpg"></a>
+          <br>
+          <h2>Pen Pals</h2>
+          <br>
+          <p>Join Region 4, the Vipers, in a pen pal system!</p>
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
     <!--slideshow-->
     <!-- img add (slideshow) -->
-    <div id = "slideshow">
+    <!--<div id = "slideshow">
     <img class="slide"src="clubpicture.jpg">
     <img class="slide"src="https://pbs.twimg.com/media/Cl22OXyUkAAkU34.jpg">
     <img class="slide"src="http://www.kiwanishh.org/uploads/5/0/0/7/50070585/1430205244.png">
     <img class="slide"src="">
     <img class="slide"src="">
-    <button type="button" name="button">&#10094;</button>
-    <button type="button" name="button">&#10095;</button>
-  </div>
+  </div>-->
     <!-- auto slide (fillers)-->
-
-  <script>
-    var myIndex = 0;
-    carousel();
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("slide");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-}
-  </script>
-  <!--
-    <div id="slideshow">
-      <img class="slide"src="clubpicture.jpg">
-      <img class="slide"src="https://pbs.twimg.com/media/Cl22OXyUkAAkU34.jpg">
-      <img class="slide"src="http://www.kiwanishh.org/uploads/5/0/0/7/50070585/1430205244.png">
-      <img class="slide"src="">
-      <img class="slide"src="">
-      <button type="button" name="button">&#10094;</button>
-      <button type="button" name="button">&#10095;</button>
-    </div>
-  -->
+  <script src = "home.js"></script>
   </body>
 </html>

@@ -1,14 +1,7 @@
-/* centering the image */
-img{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index:0;
-}
 /* teal for 35w seals */
 body{
-  background-color: #66b2b2;
-  font-family:"Helvetica";
+  background-color: #f2f2f2;
+  font-family: "Helvetica";
 }
 
 ul{
@@ -23,6 +16,12 @@ ul{
 
 *{
   margin: 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 48px;
+  font-family: "Courier";
 }
 
 ul li{
@@ -44,14 +43,20 @@ ul li a{
 }
 ul li ul li{
   display:none;
+  z-index: 1000000;
 }
 
 ul li:hover ul li{
   display:block;
   opacity:1;
+  overflow: hidden;
 }
 ul li ul li:hover{
   background-color:green;
+}
+
+ul li:hover{
+  background-color: #333;
 }
 
 ul li a.active{
@@ -61,6 +66,75 @@ ul li a.active{
 .logo{
   float:right;
 }
+
+img{
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+.container {
+  position:inherit;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.colorboxes{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.box{
+  width:30%;
+  height:70vh;
+  text-align: center;
+}
+
+.box img{
+  height:18vw;
+  width:28vw;
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+}
+
+.box h2{
+  font-family:"Courier New";
+  font-size:3vw;
+}
+
+.box p{
+  font-size:1.8vw;
+}
+
+#box1{
+  background-color: #C8C8C8;
+}
+
+#box2{
+  background-color: #66b2b2;
+}
+
+#box3{
+  background-color: #C8C8C8;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 72px;
+    color:white;
+    background-color: #282828;
+    opacity: .8;
+    transform: translate(-50%, -50%);
+}
+
 #slideshow{
   position: static;
   top: 12vw;
@@ -69,6 +143,7 @@ ul li a.active{
   margin: 0 auto;
   position: relative;
   align-content: center;
+  z-index: 0;
 }
 #slideshow>img{
   width: 75%;
@@ -82,4 +157,5 @@ ul li a.active{
   align-content: center;
   height: 50vw;
   width: 70vw;
+  z-index: 0;
 }
