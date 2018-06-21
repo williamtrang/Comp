@@ -50,14 +50,14 @@ ul li:hover ul li{
   display:block;
   opacity:1;
 }
+
+ul li:hover{
+  background-color: green;
+}
 ul li ul li:hover{
   background-color:green;
 }
 
 ul li a.active{
   background-color:green;
-}
-
-.logo{
-  float:right;
 }
